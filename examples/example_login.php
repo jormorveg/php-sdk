@@ -37,8 +37,9 @@ if(isset($_GET['code']) || isset($_SESSION['access_token'])) {
 			}
 		}
 	}
-		print_r (json_encode($_SESSION));
-
+	echo "<pre style='word-wrap: break-word; white-space: pre-wrap;'>";
+		echo json_encode($_SESSION);
+	echo "<pre>";
 } else {
 	echo '<a href="' . $meli->getAuthUrl($redirectURI, Meli::$AUTH_URL[$siteId]) . '">Login using MercadoLibre oAuth 2.0</a>';
 }
