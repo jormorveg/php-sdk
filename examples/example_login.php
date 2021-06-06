@@ -42,7 +42,7 @@ if(isset($_GET['code']) || isset($_SESSION['access_token'])) {
 		echo($_SESSION);
 		$payload = json_encode($_SESSION);
 		echo '<br>';
-		echo($_SESSION);
+		echo($payload);
 	echo '</pre>';
 
 } else {
