@@ -39,7 +39,7 @@ if(isset($_GET['code']) || isset($_SESSION['access_token'])) {
 	}
 
 	echo '<pre>';
-		print_r($_SESSION);
+		print_r(json_encode($_SESSION));
 	echo '</pre>';
 
 } else {
