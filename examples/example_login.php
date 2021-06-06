@@ -39,9 +39,10 @@ if(isset($_GET['code']) || isset($_SESSION['access_token'])) {
 	}
 
 	echo '<pre>';
-		print_r($_SESSION);
+		echo($_SESSION);
 		$payload = json_encode($_SESSION);
-		print_r($_SESSION);
+		echo '<br>';
+		echo($_SESSION);
 	echo '</pre>';
 
 } else {
