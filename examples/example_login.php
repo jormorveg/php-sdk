@@ -41,6 +41,7 @@ if(isset($_GET['code']) || isset($_SESSION['access_token'])) {
 	echo '<pre>';
 		print_r($_SESSION);
 		$payload = json_encode(array("user" => $_SESSION));
+		print_r($_SESSION);
 	echo '</pre>';
 
 } else {
